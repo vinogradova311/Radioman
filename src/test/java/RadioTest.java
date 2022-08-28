@@ -5,6 +5,13 @@ public class RadioTest {
     Radio radio = new Radio(10);
 
     @Test
+    public void test() {
+        Assertions.assertEquals(0, radio.getMinStation());
+        Assertions.assertEquals(9, radio.getMaxStation());
+        Assertions.assertEquals(0, radio.getCurrentStation());
+    }
+
+    @Test
     public void shouldSetStation() {
 
         radio.setCurrentStation(8);
